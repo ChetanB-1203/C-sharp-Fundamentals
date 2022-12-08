@@ -22,9 +22,9 @@ namespace ConsoleApp1
             this.name = name;
         }
 
-        public void addNums(int a , int b)
+        public int addNums(int a , int b)
         {
-            Console.WriteLine(a+b);
+            return a + b;
         }
         public void areaRect(int a, int b)
         {
@@ -54,8 +54,8 @@ namespace ConsoleApp1
              Console.WriteLine(e[1]);
              Console.ReadLine();*/
             Employee e = new Employee();
-            Mydelegate md = e.addNums;
-            md += e.areaRect; 
+            Mydelegate md = e.areaRect;
+         
             md += e.perimeterRect;
             md(20, 30);
             Mydelegate md2 = delegate (int x, int y)
