@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "TestProject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceAndValueTypes", "ReferenceAndValueTypes\ReferenceAndValueTypes.csproj", "{4DCCA539-23E5-4571-9A5B-31DF9F814E7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExample", "InheritanceExample\InheritanceExample.csproj", "{1784AF4D-340B-4A7A-8093-B289FAF4104F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4DCCA539-23E5-4571-9A5B-31DF9F814E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DCCA539-23E5-4571-9A5B-31DF9F814E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DCCA539-23E5-4571-9A5B-31DF9F814E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1784AF4D-340B-4A7A-8093-B289FAF4104F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1784AF4D-340B-4A7A-8093-B289FAF4104F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1784AF4D-340B-4A7A-8093-B289FAF4104F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1784AF4D-340B-4A7A-8093-B289FAF4104F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
