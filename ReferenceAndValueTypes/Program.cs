@@ -45,7 +45,7 @@ namespace ReferenceAndValueTypes
 
             Console.WriteLine(a);
 
-            //pass value as refrence with in;
+            //pass value as refrence with out;
 
             p.ValueAsRefernce2(out a);
 
