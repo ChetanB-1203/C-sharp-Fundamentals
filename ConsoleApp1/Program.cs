@@ -73,9 +73,50 @@ namespace ConsoleApp1
                 return (x + y);
             };
             Console.WriteLine(obj.Invoke(7, 6));
-         
-            Console.ReadLine();
 
+
+
+
+
+            //Date and time
+
+            DateTime testDate = new DateTime(2022, 12, 11, 15, 30, 0);
+            Console.WriteLine(testDate);
+
+            DateTime currentDate = DateTime.Now;
+            Console.WriteLine(currentDate);
+            bool areWeInDst =currentDate.IsDaylightSavingTime(); 
+            Console.WriteLine(areWeInDst);
+            DateTime start = DateTime.Now;
+            TimeSpan t = new TimeSpan(9, 0, 0);
+            DateTime end = start.Add(t);
+            Console.WriteLine(end.ToLongDateString());
+
+
+
+            //Strings
+            string firstName = "Chetan";
+            string lastName = "Badgujar";
+
+            Console.WriteLine($"{firstName}  {lastName}");
+
+            string a = "hello";
+             string b = "hello";
+            char[] letters = new char[] { 'h', 'e', 'l', 'l', 'o' } ;
+            string c = new String(letters);
+            Console.WriteLine(a==b);
+            Console.WriteLine(c==a);
+            Console.WriteLine(a.Equals(c));
+           
+
+            Employee e1 = new Employee(1, "Chetan");
+            Employee e2 = new Employee(1, "Chetan");
+            Employee e3 = e2;
+
+            Console.WriteLine(e1==e2);
+            Console.WriteLine(e1.Equals(e3));
+
+            Console.ReadLine();
         }
     }
 }
