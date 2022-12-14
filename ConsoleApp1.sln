@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceExample", "Interfa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventExample", "EventExample\EventExample.csproj", "{5A9BA1A8-F19C-478F-87A4-F490ADE2136A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructsAndClasses", "ConsoleApp2\StructsAndClasses.csproj", "{572BFBB1-1A1D-4477-9EDC-10C69427A04B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5A9BA1A8-F19C-478F-87A4-F490ADE2136A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A9BA1A8-F19C-478F-87A4-F490ADE2136A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A9BA1A8-F19C-478F-87A4-F490ADE2136A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{572BFBB1-1A1D-4477-9EDC-10C69427A04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572BFBB1-1A1D-4477-9EDC-10C69427A04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572BFBB1-1A1D-4477-9EDC-10C69427A04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572BFBB1-1A1D-4477-9EDC-10C69427A04B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
