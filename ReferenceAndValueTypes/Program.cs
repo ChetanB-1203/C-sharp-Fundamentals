@@ -10,6 +10,10 @@ namespace ReferenceAndValueTypes
     {
         string book;
        
+         public Program()
+        {
+
+        }
 
         public Program (string book)
         {
@@ -24,7 +28,11 @@ namespace ReferenceAndValueTypes
         {
             a = 10;
         }
-
+        static void changeBookName2( ref Program p, String book)
+        {
+            p = new Program();
+            p.book = book;
+        }
 
 
         static void Main(string[] args)
@@ -33,6 +41,11 @@ namespace ReferenceAndValueTypes
             Program p2 = p;
             p2.book = "attitude is everything";
             Console.WriteLine(p.book);
+
+
+            Program p3 = new Program("attitude is everything");
+            changeBookName2(ref p3, "think like a monk");
+            Console.WriteLine( p3.book);
 
             //pass by value
             int a = 7;
@@ -50,6 +63,11 @@ namespace ReferenceAndValueTypes
             p.ValueAsRefernce2(out a);
 
             Console.WriteLine(a);
+
+            string m = "chetan";
+            String n = m;
+            n = "badgujar";
+            Console.WriteLine(m);
 
             Console.ReadLine();
 

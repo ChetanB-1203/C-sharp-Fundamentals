@@ -114,7 +114,7 @@ namespace ConsoleApp1
             Employee e3 = e2;
 
             Console.WriteLine(e1==e2);
-            Console.WriteLine(e1.Equals(e3));
+            Console.WriteLine(e1.Equals(e3)); 
 
             Console.ReadLine();
         }
