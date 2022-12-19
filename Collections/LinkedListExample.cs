@@ -10,7 +10,7 @@ namespace Collections
     public class LinkedListExample
     {
       
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             LinkedList<int> list = new LinkedList<int>();
 
@@ -26,6 +26,8 @@ namespace Collections
                 Console.WriteLine(i);
             }
             Console.ReadLine();
+
+           
         }
     }
 }

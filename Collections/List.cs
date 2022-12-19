@@ -1,5 +1,6 @@
 ﻿using Interfaces_in_C_sharp;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Collections
 {
     public class List
     {
-        static void Main2(string[] args)
+        static void Main(string[] args)
         {
             List<Person> list = new List<Person>();
 
@@ -24,6 +25,23 @@ namespace Collections
             }
 
             Console.WriteLine(list.GetHashCode());
+            Console.WriteLine();
+
+
+            ArrayList arraylist = new ArrayList();
+
+            arraylist.Add("chetan");
+            arraylist.Add(20);
+            arraylist.Add(true);
+            arraylist.Add(30.0f);
+
+            foreach (var item in arraylist)
+            {
+                Console.WriteLine(item.ToString());
+            }
+
+
+            
             Console.ReadLine();
         }
 
