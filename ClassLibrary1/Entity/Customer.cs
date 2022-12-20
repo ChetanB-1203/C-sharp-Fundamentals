@@ -8,13 +8,14 @@ namespace CustomerManagement
 {
     public class Customer
     {
-        public Customer()
+        public Customer():this(0 )
         {
 
         }
         public Customer(int customerId)
         {
             CustomerId = customerId;    
+            AddressList = new List<Address>();  
         }
          
         public int CustomerId { get; private set; }
@@ -23,7 +24,7 @@ namespace CustomerManagement
         public String FisrtName { get; set; }
         public String LastName { get; set; }
 
-
+        public List<Address> AddressList { get; set; }
 
         public string FullName
         {
