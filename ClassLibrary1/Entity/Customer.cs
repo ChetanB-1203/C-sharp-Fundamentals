@@ -18,8 +18,9 @@ namespace CustomerManagement
             AddressList = new List<Address>();  
         }
          
+       
         public int CustomerId { get; private set; }
-        public string EmailAddress { get; set; }
+        public string EmailAddress {  get; set; }
 
         public String FisrtName { get; set; }
         public String LastName { get; set; }
