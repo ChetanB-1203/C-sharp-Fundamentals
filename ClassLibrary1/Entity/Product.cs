@@ -35,7 +35,10 @@ namespace CustomerManagement
             return isValid;
         }
 
-        
+        public override string ToString() => $"Product-Id :{ProductId} Product Name :{ProductName}  Current Price :{CurrentPrice}";
+
+
+
 
 
     }
