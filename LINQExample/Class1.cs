@@ -16,11 +16,18 @@ namespace LINQExample
             };
             //vm.GetAllLooping();
             //vm.OrderBy();
-            vm.WhereExpreession();
+            // vm.WhereExpreession();
+            // vm.First();
+            // vm.All();
+            //vm.LINQContainsUsingComparer();
+            //vm.CountFiltered();
+            vm.FindMinimum();
             foreach (var item in vm.Products)
             {
                 Console.WriteLine(item.ToString());
             }
+
+            Console.WriteLine(vm.ResultText);
             
             Console.ReadLine();
         }
