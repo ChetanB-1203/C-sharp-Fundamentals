@@ -8,6 +8,7 @@ namespace InterfaceExample
 {
     public  interface Shape
     {
+     
          void area();
     }
 

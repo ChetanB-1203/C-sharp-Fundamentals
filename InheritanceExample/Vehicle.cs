@@ -47,11 +47,11 @@ namespace InheritanceExample
             Console.WriteLine("Fourwheeler drive method");
         }
         
-
+        
 
         // method hiding
         public new void Drive2()
-        {
+        {  
             Console.WriteLine("Fourwheeler drive method");
             
         }

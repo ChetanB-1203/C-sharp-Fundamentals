@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
@@ -114,7 +116,34 @@ namespace ConsoleApp1
             Employee e3 = e2;
 
             Console.WriteLine(e1==e2);
-            Console.WriteLine(e1.Equals(e3)); 
+            Console.WriteLine(e1.Equals(e3));
+
+
+            TimeSpan time = DateTime.Parse("12/31/1899 7:01:12 AM").TimeOfDay;
+            string date = time.ToString().Replace(":",",");
+            string datetime = $"new Date(0,0,0,{date})";
+            Console.WriteLine(datetime);
+            Regex regex = new Regex(@"^\d{1,2}/\d{1,2}/\d{4}\s\d{1,2}:\d{1,2}:\d{1,2}\s*([AP][M])$");
+
+            
+            
+            if(regex.IsMatch("12/31/1899 7:01:12 PM"))
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+
+            DateTime result = DateTime.Parse("12/31/1899 7:01:12 M".Substring(11));
+            
+            string timeString = result.ToString("HH:mm:ss").Replace(":", ",");
+         
+            string newtime = $"new Date(0,0,0,{timeString})";
+            
+
+            Console.WriteLine(newtime);
 
             Console.ReadLine();
         }

@@ -26,9 +26,18 @@ namespace NullableType
             //shorthand syntax for nullable
             int ? j = null;
 
-            // ?? to assign nullable type to non nullable type
+            // ?? to assign nullable type to non nullable type --> null coalescing operator
             int k = i ?? 10;
             Console.WriteLine(k);
+
+            string s1 = "";
+            Console.WriteLine(s1.Length);
+
+
+            //conditional operator
+            int m = j.HasValue ? j.Value : -1;
+
+
 
             Console.ReadLine();
         }

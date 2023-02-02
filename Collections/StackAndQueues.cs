@@ -44,6 +44,8 @@ namespace Collections
             {
                 Console.WriteLine(item);
             }
+            
+            
             Console.ReadLine();
         }
 
